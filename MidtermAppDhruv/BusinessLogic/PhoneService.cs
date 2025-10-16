@@ -15,7 +15,8 @@ public class PhoneService
         };
 
         decimal price = 0;
-
+        string paymentType = order.PaymentType;
+        
         if (order.PhoneType == "Android")
         {
             if (order.PhoneColor == "Black")
@@ -43,14 +44,20 @@ public class PhoneService
             else if (order.PhoneColor == "Red")
                 price = 400;
         }
-        
-        receipt.Price = price;
-        receipt.SubTotal = price  * order.Quantity;
 
+        if (order.PaymentType == "Credit")
+            paymentType = "Credit";
+        else if (order.PaymentType == "Debit")
+            paymentType = "Debit";
+        
         if (true)
             receipt.Tip = receipt.SubTotal + (decimal)0.5;
         else
             receipt.Tip = 0;
+        
+        receipt.Price = price;
+        receipt.SubTotal = price * order.Quantity;
+        receipt.PaymentType = paymentType;
         
         receipt.Total = receipt.SubTotal + receipt.Tip;
         return receipt;

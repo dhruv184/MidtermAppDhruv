@@ -1,18 +1,67 @@
-@model TModel
+@model MidtermAppDhruv.Models.PhoneOrder
 
-@{
-    Layout = null;
-}
 
-<!DOCTYPE html>
+<div class="OrderForm">
+    
+    <h2>Order Your Phone</h2>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
+    <form asp-action="Index" method="post">
+        <table>
+            <tr>
+                <td><label>Customer Name:</label></td>
+                <td><input asp-for="CustomerName" required/></td>
+            </tr>
+
+            <tr>
+                <td><label>Phone Type:</label></td>
+                <td>
+                    <select asp-for="PhoneType" required>
+                        <option value="">--Select--</option>
+                        <option value="Android">Android</option>
+                        <option value="Apple">iPhone</option>
+                        <option value="Samsung Galaxy">Samsung Galaxy</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Phone Color:</label></td>
+                <td>
+                    <select asp-for="PhoneColor" required>
+                        <option value="">--Select--</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label>Quantity:</label></td>
+                <td><input asp-for="Quantity" type="number" min="1" required/></td>
+            </tr>
+            
+            <tr>
+                <td><label>Tip:</label></td>
+                <td><input asp-for="Tip" type="checkbox"/>5%</td>
+            </tr>
+            
+            <tr>
+                <td><label>Payment Method:</label></td>
+                <td>
+                    <select asp-for="PaymentType" required>
+                        <option value="">--Select--</option>
+                        <option value="Credit">Credit</option>
+                        <option value="Debit">Debit</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <button type="submit">Place Order</button>
+                </td>
+            </tr>
+        </table>
+    </form>
 </div>
-</body>
-</html>

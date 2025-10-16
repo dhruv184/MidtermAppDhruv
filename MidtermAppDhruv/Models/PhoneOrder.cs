@@ -6,4 +6,7 @@ public class PhoneOrder
     public string PhoneType {get; set;}
     public string PhoneColor {get; set;}
     public int Quantity {get; set;}
+    
+    public string Tip { get; set; }
+    public string PaymentType { get; set; }
 }

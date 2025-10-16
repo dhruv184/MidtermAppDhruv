@@ -1,18 +1,48 @@
-@model TModel
+@model MidtermAppDhruv.Models.Receipt
 
-@{
-    Layout = null;
-}
+<h2>Order Receipt</h2>
 
-<!DOCTYPE html>
+<table>
+    <tr>
+        <td>Customer Name</td>
+        <td>@Model.CustomerName</td>
+    </tr>
+    <tr>
+        <td>Phone Type</td>
+        <td>@Model.PhoneType</td>
+    </tr>
+    <tr>
+        <td>Phone Color</td>
+        <td>@Model.PhoneColor</td>
+    </tr>
+    <tr>
+        <td> Payment Method</td>
+        <td>@Model.PaymentType</td>
+    </tr>
+    <tr>
+        <td>Quantity</td>
+        <td>@Model.Quantity</td>
+    </tr>
+    <tr>
+        <td>Price per Item</td>
+        <td>$@Model.Price</td>
+    </tr>
+    <tr>
+        <td>Subtotal</td>
+        <td>$@Model.SubTotal</td>
+    </tr>
+    <tr>
+        <td>Tip</td>
+        <td>$@Model.Tip</td>
+    </tr>
+    
+    <tr>
+        <td>Total</td>
+        <td>$@Model.Total</td>
+    </tr>
+</table>
 
-<html>
-<head>
-    <title>title</title>
-</head>
-<body>
-<div>
-      
-</div>
-</body>
-</html>
+<br />
+<form asp-action="Index" method="get">
+    <a class="btn btn-primary" asp-controller="Phone" asp-action="Index">Place Another Order</a>
+</form>
