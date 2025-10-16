@@ -1,7 +1,12 @@
+using MidtermAppDhruv.BusinessLogic;
+using MidtermAppDhruv.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<PhoneService>();
 
 var app = builder.Build();
 
