@@ -16,7 +16,6 @@ public class PhoneService
 
         decimal price = 0;
         string paymentType = order.PaymentType;
-        
         if (order.PhoneType == "Android")
         {
             if (order.PhoneColor == "Black")
@@ -50,14 +49,14 @@ public class PhoneService
         else if (order.PaymentType == "Debit")
             paymentType = "Debit";
         
-        if (true)
-            receipt.Tip = receipt.SubTotal + (decimal)0.5;
-        else
-            receipt.Tip = 0;
-        
         receipt.Price = price;
-        receipt.SubTotal = price * order.Quantity;
+        receipt.SubTotal = price  * order.Quantity;
         receipt.PaymentType = paymentType;
+
+        if (true)
+            order.Tip = receipt.SubTotal * (decimal)0.5;
+        else
+            order.Tip = 0;
         
         receipt.Total = receipt.SubTotal + receipt.Tip;
         return receipt;

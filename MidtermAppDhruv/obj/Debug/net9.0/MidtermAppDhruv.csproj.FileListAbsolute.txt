@@ -95,3 +95,5 @@
 /Users/dhruvpatel/Desktop/Semester - 5/Enterprise Software Systems/MidTerm/MidtermAppDhruv/MidtermAppDhruv/obj/Debug/net9.0/MidtermAppDhruv.genruntimeconfig.cache
 /Users/dhruvpatel/Desktop/Semester - 5/Enterprise Software Systems/MidTerm/MidtermAppDhruv/MidtermAppDhruv/obj/Debug/net9.0/ref/MidtermAppDhruv.dll
 /Users/dhruvpatel/Desktop/Semester - 5/Enterprise Software Systems/MidTerm/MidtermAppDhruv/MidtermAppDhruv/obj/Debug/net9.0/MidtermAppDhruv.sourcelink.json
+/Users/dhruvpatel/Desktop/Semester - 5/Enterprise Software Systems/MidTerm/MidtermAppDhruv/MidtermAppDhruv/obj/Debug/net9.0/compressed/smnng5o2sd-vmtpuu94uz.gz
+/Users/dhruvpatel/Desktop/Semester - 5/Enterprise Software Systems/MidTerm/MidtermAppDhruv/MidtermAppDhruv/obj/Debug/net9.0/compressed/n5jco05b66-bfnn10vpq4.gz

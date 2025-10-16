@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MidtermAppDhruv")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cd5255e26a1499e0dd8ed8d4028b207b531ecfc3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d65e2ef199c0785627ea1a11f5012039fe681c99")]
 [assembly: System.Reflection.AssemblyProductAttribute("MidtermAppDhruv")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MidtermAppDhruv")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
